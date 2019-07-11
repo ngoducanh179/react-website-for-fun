@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Top from './Component/Top'
 import Navbar from './Component/Navbar';
-import Content from './Component/Content';
+import Content from './Component/Content'
 function App() {
   return (
     <div className="container-fluid ">
