@@ -14,6 +14,7 @@ import img10 from './../public/images/10..jpg'
 import Paregrap from './Paregrap'
 
 
+
 export default class Content1 extends Component {
 
   constructor(props) {
@@ -21,7 +22,8 @@ export default class Content1 extends Component {
 
     this.state = {
       ShowMe: 'd-none',
-      Showparagrap: 'd-block'
+      Showparagrap: 'd-block',
+
     }
   }
 
@@ -29,6 +31,12 @@ export default class Content1 extends Component {
     this.setState({
       ShowMe: 'd-block',
       Showparagrap: 'd-none'
+    })
+  }
+  exit = () => {
+    this.setState({
+      ShowMe: 'd-none',
+      Showparagrap: 'd-block'
     })
   }
 
@@ -44,6 +52,12 @@ export default class Content1 extends Component {
           <Paregrap />
         </div>
         <div className={this.state.ShowMe}>
+          <div>
+            <button onClick={this.exit} className="btn btn-outline-info">Exit</button>
+          </div>
+          <div className="text-center text-white">
+            You can click your left-mouse, click the picture and Move to see More
+          </div>
           <dl>
             <dt></dt>
             <dd>
